@@ -1,11 +1,306 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<!-- 
+  Change the color of <a>: line25 with option in line27.
+  Change the navigation bar background color: line37 with option in w3.css/line148-178
+-->
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
+
+  <title>Longkang Li's Homepage</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="description" content="Longkang Li is a PhD student in machine learning at MBZUAI.">
+  <meta name="author" content="Longkang Li" />
+
+  <link rel="stylesheet" href="w3.css">
+
+  <style>
+  .w3-sidebar a {font-family: "Roboto", sans-serif}
+  body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+  a {color: #447ec9} 
+  </style>
+  <!-- #447ec9 (blue) , #f4892c (orange) -->
+
+  <link rel="icon" type="image/png" href="imgs/6.jpg">
+
 </head>
-<body>
-    <h1>Hello, World!</h1>
+
+
+<body class="w3-content" style="max-width:1000px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-collapse w3-top w3-right" style="z-index:3;width:150px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <h4><b>LONGKANG</b></h4>
+  </div>
+  <div class="w3-padding-64 w3-text-light-grey w3-large" style="font-weight:bold">
+    <a href="#home" class="w3-bar-item w3-button">Home</a>
+    <a href="#news" class="w3-bar-item w3-button">News</a>
+    <a href="#publications" class="w3-bar-item w3-button">Research</a>
+    <a href="#experience" class="w3-bar-item w3-button">Experience</a>
+    <a href="#education" class="w3-bar-item w3-button">Education</a>
+    <a href="#service" class="w3-bar-item w3-button">Service</a>
+    <!-- <a href="#talks" class="w3-bar-item w3-button">Teaching</a> -->
+    <a href="#more" class="w3-bar-item w3-button">Contact</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  <div class="w3-bar-item w3-padding-24">LONGKANG</div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right"  style="font-stretch: extra-expanded;" onclick="w3_open()"><b>≡</b></a>
+  </div>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:150px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+<!-- The Home Section -->
+    <div class="w3-container w3-center w3-padding-32" id="home">
+      <img style="width: 80%;max-width: 400px" alt="profile photo" src="imgs/loka3.jpg"> 
+      <h3><b>Longkang Li</b></h3>
+        <p class="w3-justify" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;max-width:600px">
+          Hello, World! I am a Ph.D. student in machine learning at Mohamed bin Zayed University of Artificial Intelligence (<a href="https://mbzuai.ac.ae/">MBZUAI</a>), where I am fortunate to be advised by Prof. <a href="https://www.andrew.cmu.edu/user/kunz1/">Kun Zhang</a>. I am affiliated to the Center for Integrative Artificial Intelligence (<a href="https://ciai.site/">CIAI</a>). My research interest lies at the intersection of machine learning and causality.
+          <!-- <br><br>   -->
+        </p>
+        <p class="w3-center">
+          <a style="color:#e77007" href="https://scholar.google.com/citations?user=PT5AMzgAAAAJ&hl=zh-CN"><strong>Google Scholar</strong></a> &nbsp|&nbsp
+          <a style="color:#e77007" href="https://www.linkedin.com/in/longkang-li-546385245/"><strong>LinkedIn</strong></a> &nbsp|&nbsp
+          <a style="color:#e77007" href="https://github.com/longkangli"><strong>Github</strong></a> &nbsp|&nbsp
+          <!-- <a style="color:#e77007" href="https://dblp.org/pid/272/4405.html"><strong>DBLP</strong></a>  -->
+          <a style="color:#e77007" href="#more"><strong>Email</strong></a>
+        </p>
+        </tbody></table>
+  </div>
+
+<!-- The News Section -->
+<div class="w3-container w3-light-grey w3-padding-32" id="news">
+  <h2>News</h2>
+    <p><li> Jan.2024: One paper about federated causal discovery was accepted by ICLR 2024!</li></p>
+    <p><li> Dec.2023: One paper about imitation learning was accepted by AAAI 2024!</li></p>
+
+</div>
+
+
+ <!-- The Publications Section -->
+  <div class="w3-container w3-padding-32"" id="publications">
+    <h2>Research</h2>
+      <!-- <p class="w3-left-align" style="line-height:200%">
+        Currently, I am interested in machine learning from <strong>causal</strong> perspective, especially in causal discovery and causal representation learning. On the foundation side, I am curious about how to bridge causality and machine learning. On the application side, I am wondering how to apply causality to computer vision and medical science.  
+      </p> -->
+    <!-- <h4> Publications and Manuscripts</h4> -->
+
+    <!-- <p>
+      <li><a href=""></a>
+      <br>
+      <strong>Longkang Li</strong>, 
+      <br>
+      <em></em> 
+    </p> -->
+
+    <ul>
+      <p>
+        <li> <a href="https://openreview.net/forum?id=m7tJxajC3G">Federated Causal Discovery from Heterogeneous Data</a>
+        <br>
+        <strong>Longkang Li</strong>, Ignavier Ng, Gongxu Luo, Biwei Huang, Guangyi Chen, Tongliang Liu, Bin Gu, Kun Zhang.
+        <br>
+        <em>International Conference on Learning Representations (ICLR), 2024.</em> 
+        </p>
+
+      <p>
+        <li> <a href="https://arxiv.org/abs/2210.17178">Learning to Optimize Permutation Flow Shop Scheduling via Graph-based Imitation Learning</a>
+        <br>
+        <strong>Longkang Li</strong>, Siyuan Liang, Zihao Zhu, Chris Ding, Hongyuan Zha, Baoyuan Wu.
+        <br>
+        <em>AAAI Conference on Artificial Intelligence (AAAI), 2024.</em> 
+      </p>
+     
+      <!-- <p>
+      <li> <a href="https://arxiv.org/abs/2207.02087">Learning to Accelerate Approximate Methods for Solving Integer Programming via Early Fixing</a>
+      <br>
+      <strong>Longkang Li</strong>, Baoyuan Wu 
+      <br>
+      <em>arXiv, 2022.</em> 
+      </p>
+
+      <p>
+      <li> <a href="https://www.sciencedirect.com/science/article/pii/S0360835222002108">Bilevel Learning for Large-scale Flexible Flow Shop Scheduling</a>
+      <br>
+      <strong>Longkang Li</strong>, Hui-Ling Zhen, Mingxuan Yuan, Jiawen Lu, Jia Zeng, Jun Wang, Dirk Schnieders
+      <br>
+      <em>Computers and Industrial Engineering</em> 2022. 
+      </p> -->
+
+      <p>
+      <li> <a href="https://link.springer.com/chapter/10.1007/978-3-031-19772-7_36">A Large-scale Multiple-objective Method for Black-box Attack against Object Detection</a>
+      <br>
+      Siyuan Liang, <strong>Longkang Li</strong>, Yanbo Fan, Xiaojun Jia, Jingzhi Li, Baoyuan Wu, Xiaochun Cao.
+      <br>
+      <em>European Conference on Computer Vision (ECCV), 2022.</em> 
+      </p>
+
+      <!-- <p>
+      <li><a href="https://dl.acm.org/doi/pdf/10.1145/3503161.3548416">Stealing Knowledge of Black-box Object Detectors</a>
+      <br>
+      Siyuan Liang, Aishan Liu, Jiawei Liang, <strong>Longkang Li</strong>, Yang Bai, Xiaochun Cao.
+      <br>
+      <em>ACM MM</em> 2022.
+      </p> -->
+
+      <p>
+      <li><a href="https://openaccess.thecvf.com/content/ICCV2021/papers/Li_Invisible_Backdoor_Attack_With_Sample-Specific_Triggers_ICCV_2021_paper.pdf">Invisible Backdoor Attack with Sample-specific Triggers</a>  
+      <br>
+      Yuezun Li, Yiming Li, Baoyuan Wu, <strong>Longkang Li</strong>, Ran He, Siwei Lyu.
+      <br>
+      <em>International Conference on Computer Vision (ICCV), 2021.</em> 
+      </p>
+    </ul>
+
+    </p>
+  </div>
+
+  <!-- The Experiences Section -->
+  <div class="w3-container w3-light-grey w3-padding-32" id="experience">
+    <h2>Experience</h2>
+      <!-- <p><li> Aug.2022 - Feb.2023: BioMap. <em>Part-time Research Intern</em>. 
+        <ul>
+          Advisor: Prof. <a href="https://dasongle.github.io/index.html">Le Song</a>.
+        </ul>
+      </li></p> -->
+      <p><li> Sep.2020 - Jun.2022: The Chinese University of Hong Kong, Shenzhen. <em>Research Assistant</em>. 
+        <!-- <ul>
+          Advisor: Prof. <a href="https://sites.google.com/site/baoyuanwu2015/home">Baoyuan Wu</a>, Prof. <a href="https://sds.cuhk.edu.cn/en/teacher/65">Hongyuan Zha</a>, Prof. <a href="https://sds.cuhk.edu.cn/en/teacher/197">Chris H.Q. Ding</a>.
+        </ul> -->
+      </li></p>
+      <p><li> Oct.2019 - Aug.2020: Noah's Ark Lab, Huawei. <em>Research Intern</em>.
+        <!-- <ul>
+          Advisor: Dr. <a href="https://sites.google.com/site/mingxuanhw/home">Mingxuan Yuan</a>.
+        </ul> -->
+      </li></p> 
+  </div> 
+
+  <!-- The Education Section -->
+  <div class="w3-container w3-padding-32" id="education">
+    <h2>Education</h2>
+        <p><li> Aug.2022 - Present: Ph.D. in <em>Machine Learning</em>. Mohamed bin Zayed University of Artificial Intelligence (<a href="https://mbzuai.ac.ae/">MBZUAI</a>).</li></p>
+        <p><li> Aug.2018 - Aug.2020: M.Sc. in <em>Computer Science</em>. The University of Hong Kong (<a href="https://www.hku.hk">HKU</a>). </li></p> 
+        <p><li> Aug.2014 - Jun.2018: B.Eng. in <em>Software Engineering</em>. Sun Yat-sen University (<a href="https://www.sysu.edu.cn/sysuen/">SYSU</a>). </li></p>
+  </div>
+
+  <!-- The Talks Section -->
+  <div class="w3-container w3-light-grey w3-padding-32" id="service"> 
+    <h2>Service</h2>
+    Serving as a reviewer for journals and conferences, including: 
+    <ul>
+      <p><li> International Conference on Learning Representations (ICLR).</li></p>
+      <p><li> IEEE Transactions on Neural Networks and Learning Systems (TNNLS).</li></p>
+      <p><li> Neural Networks (NN).</li></p>
+    </ul>
+
+    Serving as a teaching assistant for the courses, including:
+    <ul>
+      <p><li> 2023/2024 Spring: ML802-Advanced Machine Learning. (Instructor: Prof. Tongliang Liu.)</li></p>
+      <p><li> 2023/2024 Fall: ML803-Advanced Probabilistic and Statistical Inference. (Instructor: Prof. Kun Zhang.)</li></p>
+    </ul>
+  </div> 
+
+  <!-- The Teaching Section -->
+  <!-- <div class="w3-container w3-padding-32" id="talks"> 
+    <h2>Teaching</h2>
+      <p><li> 2023/2024 Spring: TA for ML802-Advanced Machine Learning. (Instructor: Prof. Tongliang Liu.)</li></p>
+      <p><li> 2023/2024 Fall: TA for ML803-Advanced Probabilistic and Statistical Inference. (Instructor: Prof. Kun Zhang.)</li></p>
+  </div> -->
+
+  <!-- The More Section -->
+  <div class="w3-container w3-padding-32" id="more">
+    <h2>Contact</h2>
+    <!-- <p>My chinese name is 李隆康. I am a huge fan of <a href="https://en.wikipedia.org/wiki/Kung_Fu_Panda">Kung Fu Panda</a>. Last but not least, I would like to express my gratitude to the unconditional love from my family, as well as the trust and help from my supervisors and friends. Stay hungry, stay foolish! Modesty, Optimism, Gratitude and Persistence!</p> -->
+    <p>Email: Longkang.Li@mbzuai.ac.ae</p>
+    <p>Location: Room 11, ML Department, 2nd Floor, 1B Block, MBZUAI, Abu Dhabi, UAE.</p>
+    
+    <br>
+    <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=269&t=tt&d=WqNAECGeOap9rapsFKcIAmtV22D4reDnZzctz9NQrVQ&co=81bdd6&ct=ffffff&cmo=3acc3a&cmn=ff5353'></script>
+  </div> 
+  <!-- Pandas are the national treasure of my motherland, and I guess I am the treasure of my family! :)  -->
+
+  <!-- The Services Section -->
+  <!-- <div class="w3-container w3-light-grey w3-padding-32" id="service">
+    <h2>Services</h2>
+      <p><li> Area Chair of <a href="https://icml.cc/Conferences/2021">ICML 2021</a>, <a href="https://nips.cc/Conferences/2021/">NeurIPS 2021</a>.</p>
+      <p><li> Senior Program Committee Members of <a href="https://ijcai-21.org/">IJCAI 2021</a>, <a href="https://www.ijcai20.org/">IJCAI 2020</a> and <a href="https://www.ijcai19.org/program-committee.html">IJCAI 2019</a>.</p>
+      <p><li> Journal Reviewers of <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34">IEEE T-PAMI</a>, <a href="https://www.springer.com/journal/11263">IJCV</a>, <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=83">IEEE T-IP</a>, <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385">IEEE T-NNLS</a>, <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6046">IEEE T-MM</a>, <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=69">IEEE T-KDE</a>, etc.</p>
+      <p><li> Program Committee Members of ICCV 2021, AAAI 2021, ICLR 2021, NeurIPS 2020, ICML 2020, ECCV 2020, CVPR 2020, ICLR 2020, AAAI 2020, ICCV 2019, CVPR 2019, ICLR 2019, AAAI 2019, IJCAI 2018, AAAI 2018, NeurIPS 2018, etc.</p>
+  </div> -->
+
+
+
+  <div class="w3-light-grey w3-center w3-padding-24">
+    Welcome to Longkang's website, adapted from <a style="color: #040404" href="https://github.com/YunheWang/HomePage">HERE</a>. <br>
+    Copyright © 2024 Longkang Li. All Rights Reserved.
+    <!-- Welcome to use this website's source code <a href="https://github.com/YunheWang/HomePage">source code</a>, just add a link back to here. <a href="https://www.wangyunhe.site/">&#10025;</a></br> -->
+
+  <!-- Default Statcounter code for Yunhe Wang's Homepage
+  https://www.wangyunhe.site -->
+  <!-- No.
+  <script type="text/javascript">
+  var sc_project=12347113; 
+  var sc_invisible=0; 
+  var sc_security="21aca5d1"; 
+  var sc_https=1; 
+  var scJsHost = "https://";
+  document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+
+  "statcounter.com/counter/counter.js'></"+"script>");
+  </script> Visitor Since Feb 2022. Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a>
+  <noscript>
+    <div class="statcounter"><a title="Web Analytics Made Easy -
+  StatCounter" href="https://statcounter.com/" target="_blank"><img
+  class="statcounter" src="https://c.statcounter.com/12347113/0/21aca5d1/0/"
+  alt="Web Analytics Made Easy - StatCounter"></a></div>
+  </noscript> -->
+  <!-- End of Statcounter Code -->
+
+  </div>
+
+  <!-- End page content -->
+</div>
+
+<script>
+// Accordion 
+function myAccFunc() {
+  var x = document.getElementById("demoAcc");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
 </body>
 </html>
